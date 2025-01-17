@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to ProductX</h1>
+        <p>The ultimate solution for your needs.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="column">
+            <img src="https://via.placeholder.com/400" alt="Product Image">
+        </div>
+        <div class="column">
+            <h2>Why Choose ProductX?</h2>
+            <p>ProductX offers innovative features to simplify your life. With state-of-the-art technology and
+                user-friendly design, it’s the perfect solution for all your needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message" rows="5" required></textarea>
+            <button type="button" onclick="validateForm()">Submit</button>
+            <p id="error" class="error"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
